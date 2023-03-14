@@ -1,0 +1,86 @@
+.contenedor_tienda {
+	max-width: 1300px;
+}
+
+.caja_guitarras,
+.caja_guitarras .caja_guitarras_hijo {
+	background-color: var(--bs-amarillo);
+	padding-top: var(--mb-20);
+	padding-bottom: var(--mb-20);
+	padding-left: var(--mb-10);
+	padding-right: var(--mb-10);
+	border-radius: var(--br-5);
+	box-shadow: 0px 0px 10px var(--bs-gris);
+}
+
+.caja_guitarras {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 445px) {
+	.caja_guitarras {
+		flex-direction: column;
+	}
+}
+
+.caja_guitarras .caja_guitarras_hijo {
+	overflow: hidden;
+	position: relative;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+.caja_guitarras:hover .caja_guitarras_hijo {
+	transform: translateY(-20px);
+}
+
+.caja_guitarras .caja_guitarras_hijo span {
+	z-index: 2;
+	position: relative;
+}
+
+.caja_guitarras .caja_guitarras_hijo::before,
+.caja_guitarras .caja_guitarras_hijo::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: 1%;
+	left: 10%;
+	transform: scale(200);
+	background-color: var(--bs-verde-claro);
+	border-radius: 1000px;
+	z-index: 1;
+}
+.caja_guitarras .caja_guitarras_hijo::before {
+	top: inherit;
+	bottom: 0%;
+}
+
+.caja_guitarras .caja_guitarras_hijo p:first-child,
+.caja_guitarras .caja_guitarras_hijo p:nth-last-child(2) {
+	color: var(--bs-verde-mer);
+	font-weight: var(--font-700);
+	text-transform: uppercase;
+}
+
+.caja_guitarras .caja_guitarras_hijo p:nth-child(2) {
+	color: var(--bs-negro-oscuro);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 7;
+	overflow: hidden;
+}
+
+.caja_guitarras .caja_guitarras_hijo .caja_guitarras_link {
+	display: flex;
+	justify-content: end;
+}
+
+.caja_guitarras .caja_guitarras_hijo .caja_guitarras_link a {
+	background-color: var(--bs-negro-oscuro);
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: var(--br-5);
+}

@@ -1,0 +1,14 @@
+.header {
+	padding-top: var(--mb-20);
+	padding-bottom: var(--mb-20);
+	border-bottom: 2px solid var(--bs-amarillo);
+	background-color: var(--bs-negro-oscuro);
+}
+.header nav ul {
+	display: flex;
+}
+
+.header nav ul li a {
+	margin-left: var(--mb-10);
+	margin-right: var(--mb-10);
+}

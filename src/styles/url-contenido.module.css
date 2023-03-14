@@ -1,0 +1,93 @@
+.contenedor_guitarra_url {
+	max-width: 800px;
+}
+
+.contenedor_guitarra_url .caja_contenido {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+	justify-items: center;
+}
+
+.contenedor_blog_url .caja_contenido,
+.contenedor_guitarra_url .caja_contenido {
+	background-color: var(--bs-negro-oscuro);
+	box-shadow: 0px 0px 10px var(--bs-gris);
+	padding-top: var(--mb-20);
+	padding-bottom: var(--mb-20);
+	padding-left: var(--mb-10);
+	padding-right: var(--mb-10);
+}
+
+.contenedor_blog_url .caja_contenido {
+	display: grid;
+	justify-items: center;
+}
+
+.contenedor_blog_url .caja_contenido p:nth-child(3),
+.contenedor_blog_url .caja_contenido p:first-child,
+.contenedor_guitarra_url .caja_contenido p:nth-child(3),
+.contenedor_guitarra_url .caja_contenido p:first-child {
+	color: var(--bs-amarillo);
+}
+
+.contenedor_blog_url .caja_contenido a,
+.contenedor_guitarra_url .caja_contenido a {
+	background-color: var(--bs-azul-oscuro);
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: var(--br-5);
+}
+
+.contenedor_blog_url {
+	max-width: 1300px;
+}
+
+.contenedor_guitarra_url form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor_guitarra_url form label,
+.contenedor_guitarra_url form input[type="submit"] {
+	margin-top: var(--mb-10);
+	margin-bottom: var(--mb-10);
+	text-transform: capitalize;
+}
+
+.contenedor_guitarra_url form select,
+.contenedor_guitarra_url form input[type="submit"] {
+	padding: 5px;
+	border-radius: var(--br-5);
+	color: var(--bs-gris);
+}
+
+.contenedor_guitarra_url form input[type="submit"] {
+	background-color: var(--bs-amarillo);
+	font-weight: 700;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+
+.contenedor_guitarra_url form input[type="submit"]:hover {
+	background-color: var(--bs-verde-mer);
+	color: var(--bs-blanco-claro);
+}
+
+.contenedor_guitarra_url .caja_error_formulario {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	border-radius: var(--br-5);
+	background-color: var(--bs-rojo);
+	margin-top: var(--mb-20);
+	margin-bottom: var(--mb-20);
+	margin-left: var(--mb-10);
+	margin-right: var(--mb-10);
+}
+
+.contenedor_guitarra_url .texto_formulario_error {
+	color: var(--bs-blanco-claro);
+}

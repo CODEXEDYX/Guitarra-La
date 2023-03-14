@@ -1,0 +1,32 @@
+.contenedor_img_inicio,
+.contenedor_guitarra_inicio,
+.contenedor_posts_inicio {
+	max-width: 1300px;
+}
+
+.main_inicio_img {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.569),
+			rgba(0, 0, 0, 0.626)
+		),
+		url(../../public/img/inicio.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-color: var(--bs-negro-oscuro);
+}
+
+.main_inicio_img p {
+	text-align: center;
+}
+
+.contenedor_guitarra_inicio p:nth-child(2),
+.contenedor_posts_inicio p:nth-child(2) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
